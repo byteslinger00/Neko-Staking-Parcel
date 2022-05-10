@@ -1,0 +1,89 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+.logo-header {
+	width: 60px;
+}
+
+.flip-container {
+	-webkit-perspective: 1000;
+	width: 400px;
+}
+.flipper {
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+	height: 300px;
+}
+
+.not-flipper {
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+	height: 300px;
+}
+.nft-image {
+	border: 3px solid #f9ba55;
+	transition: all 0.2s ease-in-out;
+}
+.nft-image:hover {
+	box-shadow: 0 0 10px #9ecaed;
+	transform: scale(1.05);
+}
+.steps {
+	background: #2a2a2a;
+}
+.introjs-tooltip-header,
+.introjs-tooltiptext,
+.introjs-bullets,
+.introjs-tooltipbuttons {
+	background: #2a2a2a;
+}
+.introjs-skipbutton {
+	color: white !important;
+}
+.introjs-skipbutton:hover {
+	color: rgba(255, 255, 255, 0.514) !important;
+}
+.front,
+.back {
+	width: 400px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-backface-visibility: hidden;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+	font-size: 2em;
+	line-height: 200px;
+	text-align: center;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #fe9a20;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #fede20;
+}
+
+// .nekoStakeImg:hover {
+// 	background-image: url("../assets/gff_house.gif");
+// 	position: absolute;
+// 	top: 65%;
+// 	left: 2%;
+// }
